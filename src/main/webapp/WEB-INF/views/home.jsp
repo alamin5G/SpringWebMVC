@@ -10,8 +10,12 @@
 	<h1>Hoem page</h1>
 	<%
 		String name = (String) request.getAttribute("name");
+		String id = (String) request.getAttribute("id");
+		List<String> list = (List<String>) request.getAttribute("countryList");
 	%>
 	<p>Name: <%=name %></p>
+	<p>ID: <%=id %></p>
+	<p>Country: <%=list %></p>
 	<a href="login">Go to login page</a>
 </body>
 </html>
