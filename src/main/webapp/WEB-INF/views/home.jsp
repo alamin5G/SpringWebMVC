@@ -8,6 +8,10 @@
 </head>
 <body>
 	<h1>Hoem page</h1>
+	<%
+		String name = (String) request.getAttribute("name");
+	%>
+	<p>Name: <%=name %></p>
 	<a href="login">Go to login page</a>
 </body>
 </html>
